@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841185692328",
+    "project_id": "sell-it-663ef",
+    "storage_bucket": "sell-it-663ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841185692328:android:52a4ba48bd8cda95f9109d",
+        "android_client_info": {
+          "package_name": "com.group5.sellit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841185692328-4q280rj6oegm2l1obn0j2lcm3q4roncv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClxKvZNVx6fdbX3SfIlwlMsIB2JDyzv6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841185692328-4q280rj6oegm2l1obn0j2lcm3q4roncv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

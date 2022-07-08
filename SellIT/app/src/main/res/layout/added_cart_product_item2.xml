@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3cae62"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/p_quantity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/p_price"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textColor="@color/white"
+            android:layout_below="@+id/p_quantity"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/p_date"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Product Purchase Date"
+            android:textColor="@color/white"
+            android:layout_below="@+id/p_quantity"
+            android:textSize="15sp"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

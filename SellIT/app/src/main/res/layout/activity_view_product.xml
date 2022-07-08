@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_Product_Activity">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/topnav3"/>
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_purchase"
+        android:padding="10dp"
+        android:layout_below="@+id/top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/product_info_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/headset" />
+
+        <ImageView
+            android:id="@+id/product_info_img2"
+            android:layout_width="93dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/product_info_img"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/headset" />
+
+        <ImageView
+            android:id="@+id/product_info_img3"
+            android:layout_width="93dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/product_info_img"
+            android:layout_toRightOf="@+id/product_info_img2"
+            android:src="@drawable/headset"/>
+
+        <ImageView
+            android:id="@+id/product_info_img4"
+            android:layout_width="93dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/product_info_img"
+            android:layout_toRightOf="@+id/product_info_img3"
+            android:src="@drawable/headset" />
+
+        <ImageView
+            android:id="@+id/product_info_img5"
+            android:layout_width="93dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/product_info_img"
+            android:layout_toRightOf="@+id/product_info_img4"
+            android:src="@drawable/headset" />
+
+        <TextView
+            android:id="@+id/product_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_info_img2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_info_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Price: PHP "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_info_price"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_info_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="45dp"
+            android:layout_toRightOf="@+id/productprice"
+            android:text="Product Price"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/product_info_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/product_info_price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:background="@drawable/textview_border"
+            android:text="Product Description"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_info_description"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Status: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_info_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/status_txt"
+            android:text="Pending "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/recieved_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_purchase"
+            android:text="Recieved"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

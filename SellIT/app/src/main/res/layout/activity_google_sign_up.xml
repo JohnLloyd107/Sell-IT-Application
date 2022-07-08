@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleSignUp_Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/register_topnav_user"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="Fill UP"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/regname"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border_user"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Username"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <EditText
+        android:id="@+id/regage"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_user"
+        android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Birthdate"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/regemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regemail"
+        app:layout_constraintTop_toBottomOf="@+id/regemail" />
+
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_user"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Email"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/regaddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regaddress"
+        app:layout_constraintTop_toBottomOf="@+id/regaddress" />
+
+    <EditText
+        android:id="@+id/regphonenum"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_user"
+        android:drawableLeft="@drawable/ic_baseline_call_24"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Phone Number"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:maxLength="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/regage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regage"
+        app:layout_constraintTop_toBottomOf="@+id/regage"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/regaddress"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_user"
+        android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Address"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/regname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/regname"
+        app:layout_constraintTop_toBottomOf="@+id/regname" />
+
+    <Button
+        android:id="@+id/regaccountbtn"
+        android:layout_width="147dp"
+        android:layout_height="36dp"
+        android:background="@drawable/user_button_color"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/regphonenum"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/regphonenum"
+        app:layout_constraintTop_toBottomOf="@+id/regphonenum"
+        app:layout_constraintVertical_bias="0.16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:id="@+id/categtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:text="Categories"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/categline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#1c6a3c"
+        android:layout_below="@+id/categtext"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryview"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@id/categline"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/categline2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#1c6a3c"
+        android:layout_below="@+id/categoryview"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclev"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/categline2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_home1"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-100dp"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+</LinearLayout>

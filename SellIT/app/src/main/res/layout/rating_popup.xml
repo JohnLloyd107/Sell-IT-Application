@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:text="Rate Products"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rate_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Rate Here"
+        android:textColor="@color/black" />
+
+    <RatingBar
+        android:id="@+id/rate_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rate_txt"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_purchase"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <EditText
+        android:id="@+id/feedback_input"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate_bar"
+        android:padding="10dp"
+        android:background="@drawable/btn_purchase"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Feedback" />
+
+    <Button
+        android:id="@+id/rate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/feedback_input"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_purchase"
+        android:padding="10dp"
+        android:text="Rate"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/feedback_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/rate_btn"
+        android:background="@drawable/btn_purchase"
+        android:padding="10dp"
+        android:text="Skip"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home1Activity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/topnav"
+                android:padding="5dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleTextColor="@color/white"
+                    app:popupTheme="@style/Theme.SellIT.PopupOverlay" />
+
+                <Button
+                    android:id="@+id/searchbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_search"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/drawer_ic"-->
+                <!--                android:layout_width="50dp"-->
+                <!--                android:layout_height="40dp"-->
+                <!--                android:src="@drawable/ic_drawer"-->
+                <!--                android:layout_margin="5dp"/>-->
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_home1"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3cae62"
+        app:srcCompat="@drawable/ic_cart" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

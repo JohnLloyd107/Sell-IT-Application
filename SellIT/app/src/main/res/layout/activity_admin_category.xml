@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/scategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Select Category"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_cat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/scategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/cat_headset"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_headphones"/>
+
+        <ImageView
+            android:id="@+id/cat_computer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_computer"/>
+
+        <ImageView
+            android:id="@+id/cat_clothes"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_clothes"/>
+
+        <ImageView
+            android:id="@+id/cat_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_camera"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1_cat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/linear_cat_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/cat_console"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_console"/>
+
+        <ImageView
+            android:id="@+id/cat_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_mobiledevices"/>
+
+        <ImageView
+            android:id="@+id/cat_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_sports"/>
+
+        <ImageView
+            android:id="@+id/cat_food"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/cat_food"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
